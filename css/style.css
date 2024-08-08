@@ -6,6 +6,8 @@
     --color-line: rgba(78, 85, 95, 1);
     --color-text-black: rgba(31, 39, 50, 1);
     --color-about-gray: rgba(59, 67, 78, 1);
+    --color-btn-practice: rgba(22, 29, 39, 1);
+    --color-text-description-grey: rgba(144, 144, 144, 1);
 }
 
 html {
@@ -34,8 +36,6 @@ h1 {
     font-size: 65px;
     font-weight: 400;
     font-family: "Cormorant Garamond", serif;
-    /* line-height: 78px; */
-    /* letter-spacing: 0.4px; */
 }
 
 h2 {
@@ -53,6 +53,36 @@ h3 {
     font-size: 40px;
     font-weight: 400;
     line-height: 52px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+h4 {
+    color: #FFF;
+    font-family: "Cormorant Garamond";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 56px; /* 160% */
+    letter-spacing: 0.4px;
+}
+
+h5 {
+    margin: 0;
+    font-family: "Cormorant Garamond";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 140% */
+    letter-spacing: 0.4px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
     letter-spacing: 0.4px;
 }
 
@@ -87,8 +117,6 @@ img {
     max-width: 1360px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: 40px;
-    padding-bottom: 40px; */
     color: var(--color-white);
     outline: 2px solid red;
 }
@@ -245,9 +273,10 @@ img {
 
 /* About */
 .about-container {
-    margin-bottom: 140px;
+    margin-bottom: 173px;
     padding-top: 10px;
     padding-left: 529px;
+    /* padding-bottom: 33px; */
     position: relative;
 }
 
@@ -265,10 +294,6 @@ img {
 
 .about-text {
     margin-top: 98px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px; /* 160% */
-    letter-spacing: 0.4px;
     position: relative;
 }
 
@@ -299,18 +324,18 @@ img {
     align-items: center;
     justify-content: flex-start;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .about-set__block:first-child {
     padding: 30px 50px 39px 128px;
     position: relative;
     background-color: var(--color-about-gray);
-    /* width: 315px;
-    height: 128px; */
+    width: 315px;
+    height: 128px;
 }
 
 .about-set__block > * {
-    /* height: 126px; */
     display: block;
     font-family: "Outfit";
     font-size: 22px;
@@ -330,6 +355,7 @@ img {
 .about-set__block:last-child {
     padding: 30px 50px 39px 151px;
     position: relative;
+    background-color: var(--color-gold);
 }
 
 .about-set__block:last-child span::before {
@@ -348,7 +374,186 @@ img {
     font-weight: 400;
     line-height: 39px; /* 130% */
     letter-spacing: 0.4px;
-    border: 5px;
     text-align: center;
     box-sizing: border-box;
+}
+
+/* Practice */
+.practice-container {
+    padding-top: 130px;
+    padding-bottom: 15px;
+    margin-bottom: 110px;
+}
+
+.practice-head {
+    margin-bottom: 30px;
+}
+
+.practice-head > * {
+    max-width: 50%;
+}
+
+.practice-title {
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.practice-title::after {
+    position: absolute;
+    content: url('/img/sign.svg');
+    bottom: -60px;
+    left: 0;
+}
+
+.practice-text {
+    margin: 0;
+}
+
+.practice-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.practice-item {
+    max-width: 430px;
+    max-height: 429px;
+    padding: 55px 50px 70px 50px;
+    background-color: var(--color-text-black);
+}
+
+.practice-title__small {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.practice-title__small + p {
+    margin-bottom: 28px;
+}
+
+.practice-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 53px;
+    border-top: 1px solid var(--color-line);
+}
+
+.practice-btn {
+    width: 187px;
+    height: 58px;
+    padding: 13px 32px;
+    background-color: var(--color-btn-practice);
+    color: var(--color-white);
+    text-wrap: nowrap;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+/* Deserve */
+.deserve {
+    background-color: var(--color-white);
+}
+
+.deserve-container {
+    padding-top: 124px;
+}
+
+.deserve-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 95px;
+    max-width: 35%;
+    color: var(--color-text-black);
+    position: relative;
+}
+
+.deserve-title::after {
+    content: url('/img/sign-evenly.svg');
+    bottom: -61px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.deserve-text {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color: var(--color-text-description-grey);
+}
+
+.deserve-list,
+.deserve-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deserve-item {
+    width: 32%;
+    min-height: 180px;
+    padding: 30px;
+    background-color: #FBFBFB;
+    color: var(--color-text-black);
+    position: relative;
+}
+
+.deserve-item:last-child {
+    color: var(--color-white);
+    background-image: url('/img/deserve/femida.png');
+    background-repeat: no-repeat;
+}
+
+.deserve-item__title {
+    text-wrap: nowrap;
+}
+
+.deserve-item__box {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    padding: 50px 24px 31px 25px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Outfit";
+    border: 2px solid var(--color-gold);
+    position: relative;
+}
+
+.star::before,
+.deserve-item__box::before {
+    content: url('/img/deserve/like.svg');
+    position: absolute;
+    top: 23px;
+    left: 0;
+    right: 0;
+}
+
+.star::before {
+    content: url('/img/deserve/star.svg');
+}
+
+.deserve-item__description {
+    color: var(--color-text-description-grey);
+    max-width: 55%;
+}
+
+.deserve-fix {
+    font-family: "Outfit";
+    font-weight: 400;
+    line-height: 26px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.deserve-fix + .deserve-item__description {
+    margin-top: 10px;
+    color: var(--color-white);
+    max-width: 75%;
 }
