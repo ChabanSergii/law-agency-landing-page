@@ -9,6 +9,8 @@
     --color-btn-practice: rgba(22, 29, 39, 1);
     --color-text-description-grey: rgba(144, 144, 144, 1);
     --color-logo-grey: rgba(177, 177, 177, 1);
+    --background-filter-weare:rgba(31, 39, 50, 0.85);
+    --color-text-not-white: rgba(215, 215, 215, 1);
 }
 
 html {
@@ -610,4 +612,126 @@ img {
 
 .meet-logo:hover {
     fill: var(--color-gold);
+}
+
+/* We-are */
+.weare {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-image: url('/img/we-are/we-are.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.weare-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px 70px 60px;
+    background-color: var(--background-filter-weare);
+}
+
+.weare-left {
+    max-width: 418px;
+    height: 100%;
+}
+
+.weare-left__list {
+    margin: 0;
+}
+
+.weare-right {
+    max-width: 383px;
+    height: 100%;
+}
+
+.wear-right__item > * {
+    display: block;
+    width: 100%;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+    height: 5px;
+}
+
+.ui-widget-content {
+    color:var(--color-gold)
+}
+
+.ui-progressbar {
+    overflow: visible;
+}
+
+.ui-widget-header {
+    border: none;
+    background:var(--color-gold);
+}
+
+.weare-right__list {
+    margin-bottom: 55px;
+}
+
+.weare-right__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.weare-right__item {
+    position: relative;
+}
+
+.weare-right__item:nth-child(1):after,
+.weare-right__item:nth-child(2):after,
+.weare-right__item:nth-child(3):after,
+.weare-right__item:nth-child(4):after {
+    content: '75%';
+    right: 0;
+    top: 5px;
+    position: absolute;
+    font-size: 20px;
+    color: var(--color-text-not-white);
+    font-weight: 400;
+}
+
+
+.weare-right__item:nth-child(2):after {
+    content: '80%';
+}
+
+.weare-right__item:nth-child(3):after {
+    content: '75%';
+}
+
+.weare-right__item:nth-child(4):after {
+    content: '90%';
+}
+
+.weare-lable {
+    margin-bottom: 5px;
+}
+
+.weare-title {
+    padding-bottom: 55px;
+    margin-bottom: 50px;
+}
+
+.weare-lable,
+.weare-title__small,
+.weare-text {
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.4px;
+    color: var(--color-text-not-white)
+}
+
+.weare-title__small {
+    color: var(--color-gold);
+}
+
+.weare-text {
+    margin-top: 13px;
+    margin-bottom: 37px;
 }

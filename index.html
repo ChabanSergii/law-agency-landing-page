@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+
     <!-- Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -270,6 +274,94 @@
                 </ul>
             </div>
         </section>
+
+        <section class="weare">
+            <div class="container weare-container">
+                <div class="weare-left">
+                    <h2 class="weare-title">We Are Top Lawyers And History</h2>
+                    <ul class="weare-left__list">
+                        <li class="weare-left__item">
+                            <div class="weare-title__small">
+                                2000 – Establishment of the Company!
+                            </div>
+                            <p class="weare-text">
+                                The origins of lawyers and the first founders of law make their appearance in Ancient Greece and Rome.
+                            </p>
+                        </li>
+                        <li class="weare-left__item">
+                            <div class="weare-title__small">
+                                2006 – Together we Build
+                            </div>
+                            <p class="weare-text">
+                                Lawyers in medieval times found themselves struggling to make a living as the legal profession collapsed in the western world.
+                            </p>
+                        </li>
+                        <li class="weare-left__item">
+                            <div class="weare-title__small">
+                                2008 – Completed 10000 cases
+                            </div>
+                            <p class="weare-text">
+                                When did lawyers first start practicing in the United States? It&apos;s important to understand that the history of attorneys.
+                            </p>
+                        </li>
+                        <li class="weare-left__item">
+                            <div class="weare-title__small">
+                                2011 – We are Number One
+                            </div>
+                            <p class="weare-text">
+                                Eventually, the prejudices against lawyers started to fall away and the legal profession began to gain respect and power.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="weare-img">
+                    <img src="/img/we-are/femida-we-are.png" alt="femida">
+                </div>
+                <div class="weare-right">
+                    <h2 class="weare-title">We Are Specialised And Experienced</h2>
+                    <p class="weare-text">
+                        Keep yourself up-to-date on your area of law. Be aware of new developments, as laws and rules often change based on the situation and new cases are being decided every day.
+                    </p>
+                    <ul class="weare-right__list">
+                        <li class="weare-right__item">
+                            <div class="weare-lable">Divorce And Family Cases</div>
+                            <div id="family"></div>
+                        </li>
+                        <li class="weare-right__item">
+                            <div class="weare-lable">Property And Construction</div>
+                            <div id="construction"></div>
+                        </li>
+                        <li class="weare-right__item">
+                            <div class="weare-lable">Banking And Finance</div>
+                            <div id="finance"></div>
+                        </li>
+                        <li class="weare-right__item">
+                            <div class="weare-lable">Accident &amp; Wrongful Death</div>
+                            <div id="accident"></div>
+                        </li>
+                    </ul>
+                    <button class="button-gold">Free Consulting</button>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script>
+        $( "#family" ).progressbar({
+          value: 75
+        });
+
+        $( "#construction" ).progressbar({
+          value: 80
+        });
+
+        $( "#finance" ).progressbar({
+          value: 75
+        });
+
+        $( "#accident" ).progressbar({
+          value: 90
+        });
+    </script>
 </body>
 </html>
