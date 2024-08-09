@@ -8,6 +8,7 @@
     --color-about-gray: rgba(59, 67, 78, 1);
     --color-btn-practice: rgba(22, 29, 39, 1);
     --color-text-description-grey: rgba(144, 144, 144, 1);
+    --color-logo-grey: rgba(177, 177, 177, 1);
 }
 
 html {
@@ -107,6 +108,7 @@ button {
     font-weight: 400;
     border-radius: 0;
     border: none;
+    border-radius: 3px;
 }
 
 img {
@@ -323,16 +325,17 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .about-set__block:first-child {
+    width: 315px;
+    height: 128px;
     padding: 30px 50px 39px 128px;
     position: relative;
     background-color: var(--color-about-gray);
-    width: 315px;
-    height: 128px;
+    border-radius: 3px;
 }
 
 .about-set__block > * {
@@ -356,6 +359,7 @@ img {
     padding: 30px 50px 39px 151px;
     position: relative;
     background-color: var(--color-gold);
+    border-radius: 3px;
 }
 
 .about-set__block:last-child span::before {
@@ -421,6 +425,7 @@ img {
     max-height: 429px;
     padding: 55px 50px 70px 50px;
     background-color: var(--color-text-black);
+    border-radius: 3px;
 }
 
 .practice-title__small {
@@ -461,6 +466,7 @@ img {
 
 .deserve-container {
     padding-top: 124px;
+    padding-bottom: 81px;
 }
 
 .deserve-title {
@@ -502,6 +508,7 @@ img {
     background-color: #FBFBFB;
     color: var(--color-text-black);
     position: relative;
+    border-radius: 4px;
 }
 
 .deserve-item:last-child {
@@ -525,6 +532,7 @@ img {
     font-family: "Outfit";
     border: 2px solid var(--color-gold);
     position: relative;
+    border-radius: 4px;
 }
 
 .star::before,
@@ -556,4 +564,50 @@ img {
     margin-top: 10px;
     color: var(--color-white);
     max-width: 75%;
+}
+
+/* Meet */
+
+.meet {
+    background-color: var(--color-white);
+}
+
+.meet-title {
+    margin-bottom: 60px;
+    color: var(--color-text-black);
+    position: relative;
+}
+
+.meet-title::before,
+.meet-title::after {
+    content: url('/img/sign-big.svg');
+    position: relative;
+    top: 30px;
+    /* bottom: 0; */
+}
+
+.meet-title::before {
+    left: -40px;
+}
+
+.meet-title::after {
+    right: -40px;
+}
+
+.meet-container {
+    padding: 80px 68px 130px 61px;
+}
+
+.meet-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meet-logo {
+    fill: var(--color-logo-grey);
+}
+
+.meet-logo:hover {
+    fill: var(--color-gold);
 }
