@@ -11,6 +11,7 @@
     --color-logo-grey: rgba(177, 177, 177, 1);
     --background-filter-weare:rgba(31, 39, 50, 0.85);
     --color-text-not-white: rgba(215, 215, 215, 1);
+    --color-background-items: rgba(46, 57, 71, 1);
 }
 
 html {
@@ -407,7 +408,7 @@ img {
 .practice-title::after {
     position: absolute;
     content: url('/img/sign.svg');
-    bottom: -60px;
+    bottom: -65px;
     left: 0;
 }
 
@@ -644,6 +645,7 @@ img {
 .weare-right {
     max-width: 383px;
     height: 100%;
+    padding-bottom: 35px;
 }
 
 .wear-right__item > * {
@@ -714,6 +716,14 @@ img {
 .weare-title {
     padding-bottom: 55px;
     margin-bottom: 50px;
+    position: relative;
+}
+
+.weare-title::after {
+    position: absolute;
+    content: url('/img/sign.svg');
+    bottom: -11px;
+    left: 0;
 }
 
 .weare-lable,
@@ -728,10 +738,103 @@ img {
 }
 
 .weare-title__small {
+    line-height: 1;
     color: var(--color-gold);
 }
 
 .weare-text {
     margin-top: 13px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
+}
+
+.weare-text-right {
+    margin-bottom: 43px;
+}
+
+/* Opinioms */
+.opinions-container {
+    padding-top: 124px;
+    padding-bottom: 140px;
+}
+
+.opinions-title {
+    color: var(--color-white);
+    text-wrap: nowrap;
+}
+
+.opinions-list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opinions-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.opinions-item:nth-child(2n) {
+    flex-direction: column-reverse;
+}
+
+.opinions-item:nth-child(2n) > .opinions-text {
+    border-radius: 2px;
+    border-top-left-radius: 40px;
+    padding: 135px 47px 57px 45px;
+}
+
+.opinions-item:nth-child(2n) > .opinions-text::before {
+    top: 182px;
+}
+
+.opinions-text {
+    max-width: 313px;
+    padding: 110px 51px 57px 45px;
+    box-sizing: border-box;
+    background-color: var(--color-background-items);
+    border-radius: 2px;
+    border-bottom-left-radius: 40px;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.4px;
+}
+
+.opinions-text::before {
+    position: absolute;
+    content: url('/img/opinions/double-quote.svg');
+    top: 77px;
+    left: 45px;
+}
+
+.opinions-set {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.opinions-ava {
+    margin-right: 22px;
+}
+
+.opinions-name {
+    font-family: "Cormorant Garamond";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.opinions-post {
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.4px;
 }
