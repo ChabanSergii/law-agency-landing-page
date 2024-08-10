@@ -838,3 +838,231 @@ img {
     line-height: 32px; /* 160% */
     letter-spacing: 0.4px;
 }
+
+/* Unswer */
+.answer {
+    background-color: var(--color-white);
+}
+
+.answer-container {
+    padding-top: 124px;
+    padding-bottom: 131px;
+}
+.deserve-title {
+}
+
+.answer-title {
+    max-width: 692px;
+}
+
+.unswer-social__list,
+.unswer-social__item,
+.answer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .answer-list {
+    position: relative;
+} */
+
+.unswer-item {
+    text-align: center;
+}
+
+.unswer-item:hover > .unswer-content{
+    opacity: 1;
+    transition: opacity .4s ease;
+}
+
+.unswer-name {
+    margin-top: 20px;
+    color: var(--color-btn-practice);
+    font-family: "Cormorant Garamond";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.unswer-content {
+    opacity: 0;
+}
+
+.unswer-social__list {
+    max-width: 217px;
+    height: 66px;
+    margin: 0 auto;
+    padding: 0 21px;
+    gap: 21px;
+    position: relative;
+    top: -147px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+}
+
+.unswer-social__list::after {
+    content: '';
+    width: 108px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: var(--color-gold);
+    bottom: -34px;
+    left: -140px;
+    right: 0;
+    position: relative;
+}
+
+.unswer-icon {
+    width: 21px;
+    height: 21px;
+}
+
+/* Answers */
+.consultation-container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.consultation-left {
+    max-width: 638px;
+    padding: 10px 53px 10px 0;
+    min-height: 490px;
+
+}
+.consultation-title {
+    
+}
+
+.consultation-title__right {
+    color: var(--color-text-black);
+    font-family: "Cormorant Garamond";
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 54.6px; /* 130% */
+    letter-spacing: 0.2px;
+}
+
+.consultation-text {
+    margin-top: 96px;
+    margin-bottom: 37px;
+    color: var(--color-text-not-white);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.4px;
+}
+
+.consultation-text__right {
+    margin-top: 12px;
+    margin-bottom: 37px;
+    color: var(--color-text-description-grey);
+}
+
+.consultation-right {
+    max-width: 630px;
+    min-height: 490px;
+    padding: 40px;
+    background-color: var(--color-white);
+}
+
+.consultation-inner{
+    padding: 50px 69px 60px 40px;
+    border: 15px solid #D7D7D7;
+}
+
+.consultation-link {
+    max-width: 288px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.consultation-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    padding: 22px 21px;
+    background-color: var(--color-gold);
+}
+
+.consultation-icon__inner {
+    width: 27px;
+    height: 27px;
+}
+
+.consultation-number,
+.consultation-call {
+    color: var(--color-text-black);
+    font-family: "Outfit";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px; /* 120% */
+    letter-spacing: 0.4px;
+}
+
+.consultation-number {
+    font-size: 30px;
+    line-height: 42px; /* 140% */
+}
+
+/* Appointment */
+.appointment {
+    padding: 140px 0;
+    background-image: url('/img/form-background.png');
+    position: top center;
+    background-repeat: no-repeat;
+}
+
+.appointment-container {
+    padding: 100px 100px 95px 100px;
+    background-color: var(--color-text-black);
+}
+.appointment-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.appointment-input,
+.appointment-message {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-about-gray);
+}
+
+.appointment-input {
+    width: 557px;
+    margin-bottom: 49px;
+    padding-bottom: 27px;
+}
+
+.appointment-input,
+.appointment-message,
+.appointment-input::placeholder,
+textarea::placeholder {
+    color: var(--color-white);
+    font-family: "Outfit";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 21.6px; /* 86.4% */
+    letter-spacing: 0.4px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+textarea,
+
+.appointment-btn {
+    display: block;
+    margin: 49px auto;
+}
