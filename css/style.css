@@ -849,8 +849,6 @@ img {
     padding-top: 124px;
     padding-bottom: 131px;
 }
-.deserve-title {
-}
 
 .answer-title {
     max-width: 692px;
@@ -904,12 +902,12 @@ img {
     background-color: var(--color-white);
 }
 
-.unswer-social__list::after {
+.unswer-social__list::after { 
     content: '';
     width: 108px;
     height: 1px;
     flex-shrink: 0;
-    background-color: var(--color-gold);
+    background-color: var(--color-gold); /* gold line */
     bottom: -34px;
     left: -140px;
     right: 0;
@@ -933,10 +931,6 @@ img {
     max-width: 638px;
     padding: 10px 53px 10px 0;
     min-height: 490px;
-
-}
-.consultation-title {
-    
 }
 
 .consultation-title__right {
@@ -1031,8 +1025,8 @@ select:-webkit-autofill:focus {
 .appointment {
     padding: 140px 0;
     background-image: url('/img/form-background.png');
-    position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .appointment-container {
@@ -1113,4 +1107,132 @@ input:invalid + label{
 .appointment-btn {
     display: block;
     margin: 49px auto 10px;
+}
+
+/* Blogs */
+.blogs-container {
+    margin-top: 129px;
+    margin-bottom: 40px;
+    padding: 10px 0;
+}
+
+.blogs-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.blogs-item {
+    width: 440px;
+    min-height: 722px;
+    margin-bottom: 99px;
+    position: relative;
+    padding-bottom: 52px;
+}
+
+.blogs-item:first-child {
+    min-height: 546px;
+    padding-bottom: 100px;
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-line);
+    gap: 0 50px;
+}
+
+.blogs-item:first-child > .blogs-content > .blogs-link {
+    position: static;
+}
+
+.blogs-item:first-child > .blogs-content {
+    max-width: 646px;
+}
+
+.blogs-item:first-child > .blogs-content {
+   padding: 63px 9px 59px 0;
+}
+
+.blogs-item:first-child > .blogs-content > .blogs-title__inner {
+    padding-right: 142px;
+    font-family: "Cormorant Garamond";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58.5px; /* 130% */
+    letter-spacing: 0.4px;
+ }
+
+.blogs-header {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.blogs-date,
+.blogs-category {
+    font-family: "Outfit";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 33.6px; /* 160% */
+    letter-spacing: 0.4px;
+}
+
+.blogs-date:hover,
+.blogs-category:hover {
+    text-decoration: underline;
+}
+
+.blogs-category {
+    margin-right: 21px;
+    padding-right: 20px;
+    border-right: 1px solid var(--color-gold);
+}
+
+.blogs-title__inner {
+    margin-top: 26px;
+    margin-bottom: 22px;
+    color: var(--color-white);
+    font-family: "Cormorant Garamond";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px; /* 130% */
+    letter-spacing: 0.4px;
+}
+
+.blogs-description {
+    margin-top: 0;
+    margin-bottom: 17px;
+    color: var(--color-text-not-white);
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.4px;
+    text-overflow: ellipsis;
+}
+
+.blogs-link {
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-family: "Outfit";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px; /* 160% */
+    letter-spacing: 0.4px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Dekor */
+.dekor-container {
+    height: 248px;
+}
+
+.dekor {
+    background-image: url('/img/dekor-img.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    overflow: hidden;
 }
