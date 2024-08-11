@@ -86,9 +86,10 @@
                     </p>
                     <button class="button-gold">Get In Touch</button>
                 </div>
-                <div class="hero-right">
+                <picture class="hero-right">
+                    <source srcset="/img/hero/peter-parker.png" media="(max-width:1440px)">
                     <img src="/img/hero/peter-parker.png" alt="Peter Parker">
-                </div>
+                </picture>
             </div>
         </section>
 
@@ -529,6 +530,7 @@
 
         <section class="consultation">
             <div class="container consultation-container">
+
                 <div class="consultation-left">
                     <h2 class="consultation-title">
                         Our professional Expert law team is always ready to serve you
@@ -538,6 +540,7 @@
                     </p>
                     <button class="button-gold consultation-btn">Contact Us</button>
                 </div>
+
                 <div class="consultation-right">
                     <div class="consultation-inner">
                         <h2 class="consultation-title__right">Get a Free Consultation</h2>
@@ -557,18 +560,42 @@
                         </a>
                     </div>
                 </div>
+                
             </div>
         </section>
 
         <section class="appointment">
             <div class="container appointment-container">
                 <form action="#" method="post" class="appointment-form">
-                    <input type="name" class="appointment-input" placeholder="Full name*" required>
-                    <input type="text" class="appointment-input" placeholder="Email Address*" required>
-                    <input type="text" class="appointment-input" placeholder="Phone Number">
-                    <input type="text" class="appointment-input" placeholder="Subject">
-                    <textarea name="Message" id="" class="appointment-message" placeholder="Your Message"></textarea>
-                    <button class="appointment-btn" type="submit">Get An Appointment</button>
+
+                    <div class="appointment-form__inner">
+                        <div class="appointment-form__item">
+                            <input type="text" name="name" id="name" class="appointment-input" required autofocus autocomplete="off" minlength="3" maxlength="30">
+                            <label for="name" class="appointment-lable">Full name*</label>
+                        </div>
+    
+                        <div class="appointment-form__item">
+                            <input type="email" name="email" id="email" class="appointment-input" required autofocus autocomplete="off">
+                            <label for="email" class="appointment-lable">Email Address*</label>
+                        </div>
+    
+                        <div class="appointment-form__item">
+                            <input type="tel" name="tel" id="tel" class="appointment-input" autofocus autocomplete="off" pattern="[0-9]{3}[0-9]{2}[0-9]{3}[0-9]{2}" required>
+                            <label for="tel" class="appointment-lable">Phone Number</label>
+                        </div>
+    
+                        <div class="appointment-form__item">
+                            <input type="text" name="subject" id="subject" class="appointment-input" autofocus minlength="3" maxlength="60">
+                            <label for="subject" class="appointment-lable">Subject</label>
+                        </div>
+                    </div>
+
+                    <div class="appointment-form__item">
+                        <textarea name="message" id="message" class="appointment-message" autofocus minlength="3" maxlength="260"></textarea>
+                        <label for="message" class="appointment-lable">Your Message</label>
+                    </div>
+
+                    <button class="appointment-btn" type="submit" reset>Get An Appointment</button>
                 </form>
             </div>
         </section>
