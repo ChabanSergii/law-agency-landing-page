@@ -412,7 +412,6 @@ img {
     padding-top: 130px;
     padding-bottom: 15px;
     margin-bottom: 110px;
-    height: 728px;
 }
 
 .practice-head {
@@ -447,13 +446,16 @@ img {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-between;
 }
 
 .practice-item {
-    max-width: 430px;
-    max-height: 429px;
     padding: 55px 50px 70px 50px;
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--color-text-black);
     border-radius: 3px;
 }
@@ -461,6 +463,7 @@ img {
 .practice-title__small {
     margin-top: 0;
     margin-bottom: 8px;
+    text-wrap: nowrap;
 }
 
 .practice-title__small + p {
@@ -478,6 +481,7 @@ img {
 .practice-btn {
     width: 187px;
     height: 58px;
+    margin-left: 15px;
     padding: 13px 32px;
     background-color: var(--color-btn-practice);
     color: var(--color-white);
@@ -531,8 +535,13 @@ img {
     justify-content: space-between;
 }
 
+.deserve-list {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .deserve-item {
-    width: 32%;
+    flex: 1 1 31%;
     min-height: 180px;
     padding: 30px;
     background-color: #FBFBFB;
@@ -547,9 +556,9 @@ img {
     background-repeat: no-repeat;
 }
 
-.deserve-item__title {
+/* .deserve-item__title {
     text-wrap: nowrap;
-}
+} */
 
 .deserve-item__box {
     width: 120px;
@@ -1414,6 +1423,13 @@ input:invalid + label{
     transition: fill 0.2s linear;
 }
 
+@media (max-width:1244px) {
+    /* Deserve */
+    .deserve-item {
+        max-width: 388px;
+    }
+}
+
 @media (max-width:1124px) {
     h1 {
         font-size: 50px;
@@ -1459,9 +1475,32 @@ input:invalid + label{
     .hero-title::before {
         content: '';
     }
+
     /* About */
+    .about-container {
+        margin-bottom: 73px
+    }
+
     .about-name {
         display: none;
+    }
+
+    /* Practice */
+    .practice-container {
+        margin-bottom: 60px;
+        padding-top: 70px;
+    }
+
+    /* Deserve */
+    .deserve-item__title {
+        font-size: 20px;
+        line-height: 1;
+    }
+    .deserve-item__description {
+        display: none;
+    }
+    .deserve-visible {
+        display: inline;
     }
 }
 
@@ -1570,6 +1609,12 @@ input:invalid + label{
         bottom: auto;
         max-width: 49%;
     }
+
+    /* Deserve */
+    .deserve-item {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width:522px) {
@@ -1624,7 +1669,6 @@ input:invalid + label{
         padding-right: 10px;
     }
     .about-container {
-        /* padding-left: 0; */
         margin-top: 80px;
         padding-top: 70px;
         margin-bottom: 80px;
@@ -1636,7 +1680,6 @@ input:invalid + label{
     }
 
     .about-text::before {
-        /* display: none; */
         top: -70px;
         left: 0;
     }
@@ -1646,6 +1689,22 @@ input:invalid + label{
         min-width: 100%;
     }
 
+    .practice-head {
+        display: block;
+    }
+
+    .practice-head > * {
+        max-width: 100%;
+    }
+
+    .practice-title {
+        text-align: center;
+    }
+
+    /* Deserve */
+    .text-center {
+        min-width: 100%;
+    }
 }
 
 @media (max-width:375px) {
