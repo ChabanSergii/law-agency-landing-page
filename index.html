@@ -25,12 +25,16 @@
 <body>
     <header class="header">
         <div class="container header-container">
+
             <div class="header-up">
                 <a href="#">
-                    <img src="/img/header/logo.svg" alt="logo codx" class="header-logo">
+                    <svg class="header-logo">
+                        <use xlink:href="/img/sprites.svg#logo"></use>
+                    </svg>
                 </a>
                 <button type="button" class="btn header-btn">Book A Consultation</button>
             </div>
+
             <div  class="header-down">
                 <ul class="header-list">
                     <li class="header-item">
@@ -54,24 +58,32 @@
                         </a>
                     </li>
                 </ul>
-                <div class="header-contacts">
-                    <ul class="header-contacts__list">
-                        <li class="header-contacts__item">
-                            <a href="tel:911987654321" class="header-link">
-                                <img src="/img/header/tel.png" alt="telephone">
-                                <div class="gold">Call Us On:</div>
-                                <div>911-987654321</div>
-                            </a>
-                        </li>
-                        <li class="header-contacts__item">
-                            <a href="mailto:yourmail@mail.com" class="header-link">
-                                <img src="/img/header/mail.png" alt="email">
-                                <div class="gold">Email Us On:</div>
-                                <div>yourmail@mail.com</div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
+                <address  class="header-contacts">
+                  <a href="tel:911987654321" class="header-contacts__link">
+                    <div class="header-icon">
+                        <svg class="header-icon__inner">
+                            <use xlink:href="/img/sprites.svg#tel-white"></use>
+                        </svg>
+                    </div>
+                    <div class="header-link__inner">
+                        <div class="header-call gold">Call Us On:</div>
+                        <div class="header-number">911-987654321</div>
+                    </div>
+                  </a>
+                  <a href="mailto:yourmail@mail.com" class="header-contacts__link">
+                    <div class="header-icon">
+                        <svg class="header-icon__inner">
+                            <use xlink:href="/img/sprites.svg#mail"></use>
+                        </svg>
+                    </div>
+                    <div class="header-link__inner">
+                        <div class="header-call gold">Email Us On:</div>
+                        <div class="header-number">yourmail@mail.com</div>
+                    </div>
+                  </a>
+                </address>
+
             </div>
         </div>
     </header>
@@ -93,7 +105,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" tabindex="0">
             <div class="container about-container">
                 <img src="/img/about/1.png" alt="" class="about-img__up">
                 <img src="/img/about/2.png" alt="" class="about-img__down">
@@ -118,7 +130,7 @@
             </div>
         </section>
 
-        <section class="practice">
+        <section class="practice" tabindex="0">
             <div class="container practice-container">
                 <div class="practice-head flex-hbc">
                     <h2 class="practice-title">
@@ -202,7 +214,7 @@
                     timely resolution of the legal issues in your case.
                 </p>
                 <ul class="deserve-list">
-                    <li class="deserve-item">
+                    <li class="deserve-item" tabindex="0">
                         <div class="deserve-item__box">7230</div>
                         <div>
                             <h5 class="deserve-item__title">Trusted Clients</h5>
@@ -211,7 +223,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="deserve-item">
+                    <li class="deserve-item" tabindex="0">
                         <div class="deserve-item__box star">98%</div>
                         <div>
                             <h5 class="deserve-item__title">Successful Cases</h5>
@@ -220,7 +232,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="deserve-item">
+                    <li class="deserve-item" tabindex="0">
                         <div>
                             <h5 class="deserve-item__title deserve-fix">15,890+</h5>
                             <div class="deserve-item__description">
@@ -275,7 +287,7 @@
             </div>
         </section>
 
-        <section class="weare">
+        <section class="weare" tabindex="0">
             <div class="container weare-container">
                 <div class="weare-left">
                     <h2 class="weare-title">We Are Top Lawyers And History</h2>
@@ -345,7 +357,7 @@
             </div>
         </section>
 
-        <section class="opinions">
+        <section class="opinions" tabindex="0">
             <div class="container opinions-container">
                 <h2 class="deserve-title text-center opinions-title">Client Opinions &amp; Reviews</h2>
                 <ul class="opinions-list">
@@ -401,7 +413,7 @@
             </div>
         </section>
 
-        <section class="answer">
+        <section class="answer" tabindex="0">
             <div class="container answer-container">
                 <h2 class="deserve-title text-center answer-title">
                     Our Experienced Attorney Are Ready To Answer Any Questions
@@ -570,28 +582,28 @@
 
                     <div class="appointment-form__inner">
                         <div class="appointment-form__item">
-                            <input type="text" name="name" id="name" class="appointment-input" required autofocus autocomplete="off" minlength="3" maxlength="30">
+                            <input type="text" name="name" id="name" class="appointment-input" required autocomplete="off" minlength="3" maxlength="30">
                             <label for="name" class="appointment-lable">Full name*</label>
                         </div>
     
                         <div class="appointment-form__item">
-                            <input type="email" name="email" id="email" class="appointment-input" required autofocus autocomplete="off">
+                            <input type="email" name="email" id="email" class="appointment-input" required autocomplete="off">
                             <label for="email" class="appointment-lable">Email Address*</label>
                         </div>
     
                         <div class="appointment-form__item">
-                            <input type="tel" name="tel" id="tel" class="appointment-input" autofocus autocomplete="off" pattern="[0-9]{3}[0-9]{2}[0-9]{3}[0-9]{2}" required>
+                            <input type="tel" name="tel" id="tel" class="appointment-input" autocomplete="off" pattern="[0-9]{3}[0-9]{2}[0-9]{3}[0-9]{2}" required>
                             <label for="tel" class="appointment-lable">Phone Number</label>
                         </div>
     
                         <div class="appointment-form__item">
-                            <input type="text" name="subject" id="subject" class="appointment-input" autofocus minlength="3" maxlength="60">
+                            <input type="text" name="subject" id="subject" class="appointment-input" minlength="3" maxlength="60">
                             <label for="subject" class="appointment-lable">Subject</label>
                         </div>
                     </div>
 
                     <div class="appointment-form__item">
-                        <textarea name="message" id="message" class="appointment-message" autofocus minlength="3" maxlength="260"></textarea>
+                        <textarea name="message" id="message" class="appointment-message" minlength="3" maxlength="260"></textarea>
                         <label for="message" class="appointment-lable">Your Message</label>
                     </div>
 
@@ -794,8 +806,166 @@
         <section class="dekor">
             <div class="container dekor-container"></div>
         </section>
-
     </main>
+
+    <footer class="footer">
+        <div class="container footer-contaimer">
+
+            <div class="footer-logo">
+                <svg>
+                    <use xlink:href="/img/sprites.svg#logo"></use>
+                </svg>
+            </div>
+
+            <ul class="footer-list">
+                <li class="footer-item first-list__wrap">
+                    <h3 class="footer-title">Quick Link</h3>
+                    <ul class="footer-item__list first_list">
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Home</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">About Us</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Pricing</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Testimonial</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Contact Us</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Blog</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Blog Single</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Cases</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Cases Single</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="#" class="footer-link">Practice Areas</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="footer-item">
+                    <h3 class="footer-title">Utility Pages</h3>
+                    <ul class="footer-item__list">
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Style guide</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Licenses</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Protected</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Changelog</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Error Page</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="footer-item">
+                    <h3 class="footer-title">Practice Area</h3>
+                    <ul class="footer-item__list">
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Business Law</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Construction Law</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Car Accident</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Criminal Law</a>
+                        </li>
+                        <li class="footer-item__inner">
+                            <a href="" class="footer-link">Family Law</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="footer-item">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <address class="footer-adress">
+                        <ul class="footer-item__list footer-item__list-adress">
+                            <li class="footer-item__inner footer-geo">
+                                <a href="" class="footer-link">Attorney Law Office, 121 King Street, <br>Las Vegas 90027,USA.</a>
+                            </li>
+                            <li class="footer-item__inner">
+                                <span>
+                                    Phone:
+                                    <a href="tel:0119876 54321" class="footer-link">(011) 9876 54321</a>
+                                </span>
+                            </li>
+                            <li class="footer-item__inner">
+                                <span>Email:
+                                    <a href="mailto:info@example.com" class="footer-link">info@example.com</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </address>
+                </li>
+            </ul>
+            
+            <div class="footer-copiright">
+                <small>
+                    Copyright © Attorney Law | Designed by&nbsp; 
+                    <span class="gold">
+                        <a href="#">VictorFlow</a>
+                    </span>
+                    &nbsp;- Powered by&nbsp; 
+                    <span class="gold">
+                        <a href="#">Webflow.</a>
+                    </span>
+                </small>
+                <div class="footer-social">
+                    <div class="gold">Follow :</div>
+                    <ul class="footer-social__list">
+                        <li class="footer-social__icon">
+                            <a href="">
+                                <svg class="footer-icon__inner">
+                                    <use xlink:href="/img/sprites.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__icon">
+                            <a href="">
+                                <svg class="footer-icon__inner">
+                                    <use xlink:href="/img/sprites.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__icon">
+                            <a href="">
+                                <svg class="footer-icon__inner">
+                                    <use xlink:href="/img/sprites.svg#insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__icon">
+                            <a href="">
+                                <svg class="footer-icon__inner">
+                                    <use xlink:href="/img/sprites.svg#pinteres"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         $( "#family" ).progressbar({
