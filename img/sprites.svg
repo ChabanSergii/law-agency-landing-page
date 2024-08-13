@@ -165,6 +165,16 @@
         </g>
     </symbol>
 
+    <symbol id="sign-small" viewBox="0 0 95 44" preserveAspectRatio="meet">
+        <g>
+            <path id="Vector" d="M0 26.5H95" stroke="#D1B06B"/>
+            <path id="Vector_2" d="M0 16.5H95" stroke="#D1B06B"/>
+            <path id="Vector_3" d="M52.5 44V0" stroke="#D1B06B"/>
+            <path id="Vector_4" d="M42.5 44V0" stroke="#D1B06B"/>
+            <path id="Vector_5" d="M51 18H44V25H51V18Z" fill="#D1B06B"/>
+        </g>
+    </symbol>
+
     <!-- <symbol id="" viewBox="">
         <g>
             

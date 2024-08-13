@@ -556,10 +556,6 @@ img {
     background-repeat: no-repeat;
 }
 
-/* .deserve-item__title {
-    text-wrap: nowrap;
-} */
-
 .deserve-item__box {
     width: 120px;
     height: 120px;
@@ -622,7 +618,6 @@ img {
     content: url('/img/sign-big.svg');
     position: relative;
     top: 30px;
-    /* bottom: 0; */
 }
 
 .meet-title::before {
@@ -641,6 +636,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .meet-logo {
@@ -803,6 +799,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0 29px;
 }
 
 .opinions-item {
@@ -897,7 +894,6 @@ img {
     align-items: center;
 }
 
-
 .unswer-item {
     text-align: center;
 }
@@ -956,7 +952,7 @@ img {
     transition: fill 0.2s linear;
 }
 
-/* Answers */
+/* Consultation */
 .consultation-container {
     padding-top: 140px;
     padding-bottom: 140px;
@@ -998,7 +994,6 @@ img {
 
 .consultation-right {
     max-width: 630px;
-    min-height: 500px;
     padding: 40px;
     background-color: var(--color-white);
 }
@@ -1087,6 +1082,12 @@ select:-webkit-autofill:focus {
 .appointment-form__item {
     margin-bottom: 37px;
     position: relative;
+    max-width: 48%;
+    flex: 1 1 557px;
+}
+
+.appointment-form__message {
+    max-width: 100%;
 }
 
 .appointment-lable {
@@ -1096,21 +1097,18 @@ select:-webkit-autofill:focus {
 }
 
 .appointment-input {
-    width: 557px;
+    width: 100%;
     height: 37px;
     margin-bottom: 49px;
     padding-bottom: 1px;
     color: var(--color-gold);
     background: transparent;
+    flex-shrink: 0;
 }
 
 input:invalid + label{
     color: rgb(234, 127, 127);
 }
-
-/* input:valid + label{
-    color: var(--color-gold);
-} */
 
 .appointment-input,
 .appointment-message {
@@ -1165,10 +1163,11 @@ input:invalid + label{
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .blogs-item {
-    width: 440px;
+    flex: 1 1 32%;
     min-height: 722px;
     margin-bottom: 99px;
     position: relative;
@@ -1192,7 +1191,7 @@ input:invalid + label{
 
 .blogs-item:first-child > picture > img{
     width: 655px;
-    height: 546px;
+    height: auto;
 }
 
 .blogs-item:first-child > .blogs-content {
@@ -1211,9 +1210,10 @@ input:invalid + label{
  }
 
 .blogs-header {
-    margin-top: 24px;
+    padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid var(--color-line);
+    
 }
 
 .blogs-date,
@@ -1223,6 +1223,7 @@ input:invalid + label{
     font-weight: 400;
     line-height: 33.6px; /* 160% */
     letter-spacing: 0.4px;
+    text-wrap: nowrap;
 }
 
 .blogs-date:hover,
@@ -1469,11 +1470,21 @@ input:invalid + label{
     .hero-left {
         padding-top: 58px;
         padding-bottom: 170px;
-        position: relative;
+        position: static;
     }
 
+    .hero-title {
+        position: relative;
+        margin-bottom: 31px;
+    }
+    
     .hero-title::before {
-        content: '';
+        content: url('/img/sign-evenly-small.svg');
+        top: auto;
+        bottom: 0;
+        width: 5px;
+        height: 5px;
+        object-fit: contain;
     }
 
     /* About */
@@ -1483,6 +1494,13 @@ input:invalid + label{
 
     .about-name {
         display: none;
+    }
+
+    .about-text::before {
+        content: url('/img/sign.svg');
+        top: -65px;
+        left: 0;
+        position: absolute;
     }
 
     /* Practice */
@@ -1502,19 +1520,62 @@ input:invalid + label{
     .deserve-visible {
         display: inline;
     }
+
+    /* Weare */
+    .weare-container {
+        display: block;
+        text-align: center;
+    }
+
+    .weare-container > * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .weare-img {
+        display: none;
+    }
+    .weare-title {
+        text-align: center;
+    }
+
+    .weare-title::after {
+        content: url('/img/sign-evenly.svg');
+        bottom: -20px;
+        left: 0;
+        right: 0;
+    }
+
+    /* Answer */
+    .answer-container {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+
+    /* Blogs */
+    .blogs-item:first-child > .blogs-content > .blogs-title__inner {
+        font-size: 35px;
+        line-height: 1; /* 130% */
+     }
+
 }
 
 @media (max-width:932px) {
-    .header-contacts {
+    .header-link__inner {
         display: none;
     }
 
+    .header-icon {
+        display: inline-block;
+    }
+
     .header-down {
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header-list {
-        justify-content: center;
+        justify-content: space-between;
     }
 
 }
@@ -1569,6 +1630,20 @@ input:invalid + label{
     .hero-text {
         color: var(--color-white);
     }
+
+    .hero-title {
+        margin-bottom: 55px;
+    }
+
+    .hero-title::before {
+        content: url('/img/sign-evenly.svg');
+        top: auto;
+        bottom: 0;
+        left: 41%;
+        width: 5px;
+        height: 5px;
+        object-fit: contain;
+    }
 }
 
 @media (max-width:768px) {
@@ -1582,7 +1657,16 @@ input:invalid + label{
         padding: 20px 61px 20px 61px;
     }
 
-    /* Heaser */
+    /* Header */
+    .header-nav {
+        display: none;
+    }
+
+    .header-contacts {
+        margin-left: auto;
+    }
+
+    /* hero */
     .hero-left {
         padding-top: 100px;
     }
@@ -1594,8 +1678,24 @@ input:invalid + label{
         margin-bottom: 80px;
     }
 
+    .about-text::before {
+        display: none;
+    }
+
     .about-title {
+        margin-left: auto;
+        margin-right: auto;
         max-width: 60%;
+        text-align: center;
+        position: relative;
+    }
+
+    .about-title::after {
+        content: url('/img/sign-evenly.svg');
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -75px;
     }
 
     .about-img__up {
@@ -1614,6 +1714,48 @@ input:invalid + label{
     .deserve-item {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /* Meet */
+    .meet-list {
+        gap:0 50px
+    }
+
+    .meet-item {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    
+    /* Opinioms */
+    .opinions-list {
+        flex-wrap: wrap;
+        gap: 29px 29px;
+    }
+
+    .opinions-item {
+        flex: 1 1 47%;
+    }
+}
+
+@media (max-width:666px) {
+    /* Answer */
+    .answer-list {
+        display: block;
+    }
+
+    .unswer-content {
+        opacity: 1;
+    }
+
+    /* Appointment */
+    .appointment-form__inner {
+        display: block;
+        min-width: 100%;
+    }
+
+    .appointment-form__item {
+        min-width: 100%;
     }
 }
 
@@ -1656,6 +1798,10 @@ input:invalid + label{
         margin-right: 0;
         width: 425px !important;
         padding-top: 170px;
+    }
+
+    .hero-title::before {
+        top: 165px;
     }
 
     /* About */
@@ -1701,10 +1847,81 @@ input:invalid + label{
         text-align: center;
     }
 
+    /* Practice */
+    .practice-title::after {
+        content: url('/img/sign-evenly.svg');
+        bottom: -65px;
+        left: 0;
+        right: 0;
+    }
+
     /* Deserve */
     .text-center {
         min-width: 100%;
     }
+
+    /* Meet */
+    .meet-list {
+        display: block;
+        text-align: center;
+    }
+
+    .meet-title {
+        margin-bottom: 75px;
+    }
+
+    .meet-title::before {
+        display: none;
+    }
+
+    .meet-title::after {
+        content: url('/img/sign-evenly.svg');
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+
+    /* Opinioms */
+    .opinions-list {
+        display: block;
+    }
+
+    .opinions-item {
+        width: 425px;
+        margin: 7%;
+    }
+
+    /* Consultation */
+    .consultation-container {
+        display: block;
+    }
+
+    .consultation-left {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .consultation-inner{
+        padding: 25px 34px 30px 20px;
+        border: 10px solid #D7D7D7;
+    }
+    
+    .consultation-title__right {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .consultation-right {
+        max-height: 500px !important;
+        padding: 20px;
+    }
+
+    .consultation-number {
+        font-size: 14px;
+        line-height: 1;
+    }
+
 }
 
 @media (max-width:375px) {
@@ -1713,4 +1930,11 @@ input:invalid + label{
         width: 60%;
     }
 
+}
+
+@media (max-width:320px) {
+    /* Appointment */
+    .appointment-btn {
+        width: 100%;
+    }
 }
