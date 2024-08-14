@@ -1,3 +1,32 @@
+/* outfit-regular - latin */
+@font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/outfit/outfit-v11-latin-regular.woff2') format('woff2'),
+        url('/fonts/outfit/outfit-v11-latin-regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* cormorant-garamond-regular - latin */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('/fonts/cormorant-garamond-v16-latin-regular.woff2') format('woff2'),
+        url('/fonts/cormorant-garamond/cormorant-garamond-v16-latin-regular.woff') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* outfit-700 - latin */
+@font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/outfit/outfit-v11-latin-700.woff2') format('woff2'),
+        url('/fonts/outfit/outfit-v11-latin-700.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+
 :root {
     --background-filter:rgba(31, 39, 50, 0.81);
     --color-white: rgba(255, 255, 255, 1);
@@ -16,7 +45,7 @@
 }
 
 html {
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfit";
     background: #161D27;
 }
 
@@ -55,7 +84,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant Garamond", serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 52px; /* 130% */
@@ -64,7 +93,7 @@ h3 {
 
 h4 {
     color: var(--color-white);
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant Garamond", serif;
     font-size: 35px;
     font-weight: 400;
     line-height: 56px; /* 160% */
@@ -73,7 +102,7 @@ h4 {
 
 h5 {
     margin: 0;
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant Garamond", serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -1149,6 +1178,11 @@ input:invalid + label{
 .appointment-btn {
     display: block;
     margin: 49px auto 10px;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 21.6px; /* 86.4% */
+    letter-spacing: 0.4px;
 }
 
 /* Blogs */
