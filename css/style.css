@@ -66,48 +66,39 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
+
+h1, h2, h3, h4, h5 {
     margin: 0;
-    font-size: 65px;
-    font-weight: 400;
+    text-transform: capitalize;
     font-family: "Cormorant Garamond", serif;
+    letter-spacing: 0.4px;
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 65px;
+    line-height: 78px;
 }
 
 h2 {
-    margin: 0;
     font-size: 45px;
-    font-weight: 400;
     line-height: 58.5px; /* 130% */
-    letter-spacing: 0.4px;
-    text-transform: capitalize;
-    font-family: "Cormorant Garamond", serif;
 }
 
 h3 {
-    font-family: "Cormorant Garamond", serif;
     font-size: 40px;
-    font-weight: 400;
     line-height: 52px; /* 130% */
-    letter-spacing: 0.4px;
 }
 
 h4 {
-    color: var(--color-white);
-    font-family: "Cormorant Garamond", serif;
     font-size: 35px;
-    font-weight: 400;
     line-height: 56px; /* 160% */
-    letter-spacing: 0.4px;
 }
 
 h5 {
-    margin: 0;
-    font-family: "Cormorant Garamond", serif;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 42px; /* 140% */
-    letter-spacing: 0.4px;
 }
 
 .text-center {
@@ -274,9 +265,8 @@ img {
 
 .header-link__inner {
     color: var(--color-white);
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 22px;
-    font-style: normal;
     font-weight: 400;
     line-height: 26.4px; /* 120% */
     letter-spacing: 0.4px;
@@ -394,7 +384,7 @@ img {
 
 .about-set__block > * {
     display: block;
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 28.6px; /* 130% */
@@ -532,6 +522,10 @@ img {
     padding-bottom: 81px;
 }
 
+.deserve-item__title {
+    color: var(--color-text-black);
+}
+
 .deserve-title {
     margin-left: auto;
     margin-right: auto;
@@ -593,7 +587,7 @@ img {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     border: 2px solid var(--color-gold);
     position: relative;
     border-radius: 4px;
@@ -618,7 +612,8 @@ img {
 }
 
 .deserve-fix {
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
+    color: var(--color-white);
     font-weight: 400;
     line-height: 26px; /* 130% */
     letter-spacing: 0.4px;
@@ -790,7 +785,7 @@ img {
 .weare-lable,
 .weare-title__small,
 .weare-text {
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px; /* 160% */
@@ -894,7 +889,7 @@ img {
 }
 
 .opinions-post {
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px; /* 160% */
@@ -951,6 +946,7 @@ img {
     height: 66px;
     margin: 0 auto;
     padding: 0 21px;
+    padding-right: 0;
     gap: 21px;
     position: relative;
     top: -147px;
@@ -961,7 +957,6 @@ img {
 
 .unswer-social__list::after { 
     content: '';
-    width: 108px;
     height: 1px;
     flex-shrink: 0;
     background-color: var(--color-gold); /* gold line */
@@ -1136,7 +1131,7 @@ select:-webkit-autofill:focus {
 }
 
 input:invalid + label{
-    color: rgb(234, 127, 127);
+    color: var(--color-line);
 }
 
 .appointment-input,
@@ -1148,7 +1143,7 @@ input:invalid + label{
 
 .appointment-lable {
     color: var(--color-white);
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 25px;
     font-weight: 400;
     line-height: 21.6px; /* 86.4% */
@@ -1157,7 +1152,7 @@ input:invalid + label{
 
 .appointment-input,
 .appointment-message {
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px; /* 160% */
@@ -1237,7 +1232,7 @@ input:invalid + label{
     padding-right: 142px;
     font-family: "Cormorant Garamond";
     font-size: 45px;
-    font-style: normal;
+
     font-weight: 400;
     line-height: 58.5px; /* 130% */
     letter-spacing: 0.4px;
@@ -1252,7 +1247,7 @@ input:invalid + label{
 
 .blogs-date,
 .blogs-category {
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 21px;
     font-weight: 400;
     line-height: 33.6px; /* 160% */
@@ -1286,7 +1281,7 @@ input:invalid + label{
     margin-top: 0;
     margin-bottom: 17px;
     color: var(--color-text-not-white);
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px; /* 160% */
@@ -1297,7 +1292,7 @@ input:invalid + label{
 .blogs-link {
     text-decoration: underline;
     text-transform: capitalize;
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 35.2px; /* 160% */
@@ -1326,23 +1321,33 @@ input:invalid + label{
 
 .footer-logo {
     margin-bottom: 95px;
+    display: flex;
     text-align: center;
-    overflow: hidden;
+    align-items: center;
+    overflow-x: clip;
+}
+
+.footer-logo__link {
+    height: 79px;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.footer-logo::after,
-.footer-logo::before {
-    content: url('/img/footer-sign.svg');
+.footer-logo__link::before {
+    content: url('/img/footer-sign-l.svg');
     position: absolute;
-    top: 37px;
-    right: 833px;
+    top: 38px;
+    left: -523px;
+    bottom: 0;
 }
 
-.footer-logo::after {
-    left: 833px;
-    right: auto;
-    transform: rotate(180deg);
+.footer-logo__link::after {
+    content: url('/img/footer-sign-r.svg');
+    position: absolute;
+    top: 38px;
+    right: -523px;
+    bottom: 0;
 }
 
 .footer-list {
@@ -1355,7 +1360,7 @@ input:invalid + label{
 .footer-title {
     margin-bottom: 39px;
     padding: 21px 0;
-    color: #FFF;
+    color: var(--color-white);
     font-family: "Cormorant Garamond";
     font-size: 30px;
     font-weight: 400;
@@ -1381,6 +1386,11 @@ input:invalid + label{
     padding-bottom: 9.5px;
 }
 
+.footer-item:nth-child(2),
+.footer-item:nth-child(3){
+    min-width: 184px;
+}
+
 .footer-item__inner {
     margin-bottom: 20px;
 }
@@ -1390,12 +1400,15 @@ input:invalid + label{
     transition: color 0.3s linear;
 }
 
+.footer-adress {
+    font-style: normal;
+}
+
 .footer-adress,
 .footer-link {
     color: var(--color-white);
-    font-family: "Outfit";
+    font-family: "Outfit", sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 160% */
     letter-spacing: 0.4px;
@@ -1412,7 +1425,6 @@ input:invalid + label{
 
 .footer-geo {
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: 48px; /* 240% */
     letter-spacing: 0.4px;
@@ -1592,6 +1604,16 @@ input:invalid + label{
         line-height: 1; /* 130% */
      }
 
+     /* Footer */
+     .footer-item {
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     .footer-copiright {
+        flex-wrap: wrap;
+        text-align: center;
+     }
 }
 
 @media (max-width:932px) {
@@ -1770,6 +1792,38 @@ input:invalid + label{
     .opinions-item {
         flex: 1 1 47%;
     }
+
+    /* Blogs */
+    .blogs-container {
+        margin-bottom: 0;
+    }
+
+    .blogs-item:first-child {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .blogs-item:first-child > picture > img{
+        width: 100%;
+    }
+    
+    /* Footer */
+    .footer-contaimer {
+        padding-top: 0;
+    }
+
+    .footer-logo {
+        margin-bottom:70px;
+    }
+
+    .footer-copiright,
+    .footer-copiright > small {
+        padding-top: 24px;
+        padding-bottom: 28px;
+        font-size: 14px;
+        line-height: 20px; /* 160% */
+        letter-spacing: 0.2px;
+}
 }
 
 @media (max-width:666px) {
@@ -1956,6 +2010,44 @@ input:invalid + label{
         line-height: 1;
     }
 
+    /* Dekor */
+
+    .dekor {
+        display: none;
+    }
+
+    /* Footer */
+    .footer-logo,
+    .footer-logo__link,
+    .footer-logo__img {
+        height: 40px;
+    }
+
+    .footer-logo__link::after,
+    .footer-logo__link::before {
+        content: url('/img/sign-evenly-small.svg');
+        left: 0;
+        right: 0;
+        top: 10px;
+        bottom: 0;
+    }
+
+    .footer-logo__link::before{
+        left: -257px;
+    }
+
+    .footer-logo__link::after {
+        right: -257px;
+    }
+
+    .footer-list {
+        display: block;
+    }
+
+    .footer-item {
+        text-align: center;
+    }
+
 }
 
 @media (max-width:375px) {
@@ -1971,4 +2063,5 @@ input:invalid + label{
     .appointment-btn {
         width: 100%;
     }
+
 }
