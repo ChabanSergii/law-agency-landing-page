@@ -19,7 +19,7 @@
 
 /* outfit-700 - latin */
 @font-face {
-    font-family: 'Outfit';
+    font-family: 'Outfit-Bold';
     src: url('/fonts/outfit/outfit-v11-latin-700.woff2') format('woff2'),
         url('/fonts/outfit/outfit-v11-latin-700.woff') format('woff');
     font-style: normal;
@@ -70,7 +70,7 @@ body {
 h1, h2, h3, h4, h5 {
     margin: 0;
     text-transform: capitalize;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond";
     letter-spacing: 0.4px;
     color: var(--color-white);
     font-weight: 400;
@@ -197,6 +197,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-style: normal; /* for address */
 }
 
 .header-up,
@@ -1173,7 +1174,7 @@ input:invalid + label{
 .appointment-btn {
     display: block;
     margin: 49px auto 10px;
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfit-Bold", sans-serif;
     font-size: 25px;
     font-weight: 700;
     line-height: 21.6px; /* 86.4% */
