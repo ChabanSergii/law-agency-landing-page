@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'Cormorant Garamond';
     src: url('/fonts/cormorant-garamond-v16-latin-regular.woff2') format('woff2'),
-        url('/fonts/cormorant-garamond/cormorant-garamond-v16-latin-regular.woff') format('woff2');
+        url('/fonts/cormorant-garamond/cormorant-garamond-v16-latin-regular.woff') format('woff');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -57,7 +57,7 @@ body {
     /* outline: 2px solid white; */
     font-family: "Outfit", sans-serif;
     color: var(--color-white);
-    background-image: url('/img/back-img.png');
+    background-image: url('/img/back-img.webp');
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -359,7 +359,7 @@ img {
 }
 
 .about-name::before {
-    content: url('/img/about/piter-ava.png');
+    content: url('/img/about/piter-ava.webp');
     left: -110px;
     top: -19px;
     bottom: 0;
@@ -576,7 +576,7 @@ img {
 
 .deserve-item:last-child {
     color: var(--color-white);
-    background-image: url('/img/deserve/femida.png');
+    background-image: url('/img/deserve/femida.webp');
     background-repeat: no-repeat;
 }
 
@@ -676,7 +676,7 @@ img {
 .weare {
     padding-top: 140px;
     padding-bottom: 140px;
-    background-image: url('/img/we-are/we-are.png');
+    background-image: url('/img/we-are/we-are.webp');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -753,13 +753,8 @@ img {
     font-weight: 400;
 }
 
-
 .weare-right__item:nth-child(2):after {
     content: '80%';
-}
-
-.weare-right__item:nth-child(3):after {
-    content: '75%';
 }
 
 .weare-right__item:nth-child(4):after {
@@ -1088,7 +1083,7 @@ select:-webkit-autofill:focus {
 
 .appointment {
     padding: 140px 0;
-    background-image: url('/img/form-background.png');
+    background-image: url('/img/form-background.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1308,7 +1303,7 @@ input:invalid + label{
 }
 
 .dekor {
-    background-image: url('/img/dekor-img.png');
+    background-image: url('/img/dekor-img.webp');
     background-repeat: no-repeat;
     background-position: top left;
     overflow: hidden;
@@ -1639,7 +1634,7 @@ input:invalid + label{
 
 @media (max-width:900px) {
     body {
-        background-image: url('/img/html-background.png');
+        background-image: url('/img/html-background.webp');
     }
 
     h1 {
