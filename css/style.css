@@ -185,6 +185,24 @@ img {
     padding-bottom: 48px;
 }
 
+.menu__btn {
+    display: none;
+    width: 55px;
+    height: 45px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.menu__btn span {
+    height: 2px;
+    background-color: var(--color-gold);
+    width: 100%;
+}
+
 .header-logo {
     width: 400px;
     height: 79px;
@@ -1708,10 +1726,30 @@ input:invalid + label{
         height: 75px;
         padding: 20px 61px 20px 61px;
     }
-
+    
     /* Header */
+    .menu__btn {
+        display: flex;
+    }
+    
     .header-nav {
-        display: none;
+        position: relative;
+    }
+
+    .header-list {
+        width: 100vw;
+        background-color: var(--background-filter);
+        gap: 25px;
+        padding: 25px;
+        position: absolute;
+        top: 66px;
+        left: -10px;
+        opacity: 0;
+        transition: opacity .3s ease-in;
+    }
+
+    .header-list.menu--open {
+        opacity: 1;
     }
 
     .header-contacts {
